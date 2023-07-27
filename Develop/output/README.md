@@ -1,4 +1,4 @@
-# dd
+# ReadMe generator
 
   ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 
@@ -13,22 +13,22 @@
   - [Questions](#questions)
 
   ## Description
-  ddw
+  Creates a professinal Readme after answering a series of questions
 
   ## Installation
-  ww
+  run index.js through node
 
   ## Usage
-  ee
+  Answer a few questions
 
   ## License 
   This license project is covered under the MIT license
 
   ## Contributions
-  ff
+  Vinita Navani
 
   ## Tests
-  ff
+  Run manual tests against the acceptance criteria
 
   ## Questions
-  For any questions please email me at ff or visit my Github page at [ff](https://github.com/ff).
+  For any questions please email me at vinita.navani@gmail.com or visit my Github page at [vini3076](https://github.com/vini3076).
