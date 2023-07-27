@@ -1,37 +1,34 @@
 # dd
 
-  
+  ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
 
   ## Table of Contents
   
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [License](#license)
   - [Contributions](#contributions)
   - [Tests](#tests)
-  - [Email](#email)
-  - [Github](#github)
+  - [Questions](#questions)
 
   ## Description
-  dd
+  ddw
 
   ## Installation
-  dd
+  ww
 
   ## Usage
-  dd
+  ee
 
-  
+  ## License 
+  This license project is covered under the MIT license
 
   ## Contributions
-  dd
+  ff
 
   ## Tests
-  dd
+  ff
 
-  ## Email
-  For any questions please email me at dd.
-
-  ## Github
-  Please visit my Github page at [dd](https://github.com/dd).
-
+  ## Questions
+  For any questions please email me at ff or visit my Github page at [ff](https://github.com/ff).

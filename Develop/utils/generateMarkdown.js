@@ -16,8 +16,6 @@ function renderLicenseBadge(license) {
   }
 }
 
-
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -45,7 +43,7 @@ function renderLicenseSection(license) {
     case 'GNU':
     case 'MIT':
   return `## License 
-          ${license}`;
+  This license project is covered under the ${license} license`;
   return licenseSection;
    
   }
@@ -64,8 +62,7 @@ function generateMarkdown(data) {
   - ${licenseLink}
   - [Contributions](#contributions)
   - [Tests](#tests)
-  - [Email](#email)
-  - [Github](#github)`;
+  - [Questions](#questions)`;
 
   if(data.license === "No License"){
     tableOfContents = `
@@ -74,8 +71,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contributions](#contributions)
   - [Tests](#tests)
-  - [Email](#email)
-  - [Github](#github)`;
+  - [Questions](#questions)`;
   }
 
   return `# ${data.title}
@@ -102,12 +98,8 @@ function generateMarkdown(data) {
   ## Tests
   ${data.testing}
 
-  ## Email
-  For any questions please email me at ${data.email}.
-
-  ## Github
-  Please visit my Github page at [${data.github}](https://github.com/${data.github}).
-
+  ## Questions
+  For any questions please email me at ${data.email} or visit my Github page at [${data.github}](https://github.com/${data.github}).
 `;
 }
 
