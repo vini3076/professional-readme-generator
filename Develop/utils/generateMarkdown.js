@@ -57,23 +57,33 @@ function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
 
-  if(data.license != "No License"){
-    let license= data.license;
+  let tableOfContents = `
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - ${licenseLink}
+  - [Contributions](#contributions)
+  - [Tests](#tests)
+  - [Email](#email)
+  - [Github](#github)`;
+
+  if(data.license === "No License"){
+    tableOfContents = `
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributions](#contributions)
+  - [Tests](#tests)
+  - [Email](#email)
+  - [Github](#github)`;
   }
+
   return `# ${data.title}
 
   ${licenseBadge}
 
   ## Table of Contents
-
-  [Description](#description)
-  [Installation](#installation)
-  [Usage](#usage)
-  ${licenseLink}
-  [Contributions](#contributions)
-  [Tests](#tests)
-  [Email](#email)
-  [Github](#github)
+  ${tableOfContents}
 
   ## Description
   ${data.description}
@@ -93,7 +103,7 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## Email
-  For any questions please email me at ${data.email}
+  For any questions please email me at ${data.email}.
 
   ## Github
   Please visit my Github page at [${data.github}](https://github.com/${data.github}).
