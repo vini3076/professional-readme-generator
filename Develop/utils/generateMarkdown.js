@@ -20,15 +20,46 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+let licenseLink = '';
+  switch (license) {
+    case 'No License':
+      return '';
+    case 'Apache':
+    case 'GNU':
+    case 'MIT':
+  licenseLink = "[License](#license)";
+  return licenseLink;
+   
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseSection = '';
+  switch (license) {
+    case 'No License':
+      return '';
+    case 'Apache':
+    case 'GNU':
+    case 'MIT':
+  return `## License 
+          ${license}`;
+  return licenseSection;
+   
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
+  const licenseLink = renderLicenseLink(data.license);
+  const licenseSection = renderLicenseSection(data.license);
+
+  if(data.license != "No License"){
+    let license= data.license;
+  }
   return `# ${data.title}
 
   ${licenseBadge}
@@ -38,9 +69,11 @@ function generateMarkdown(data) {
   [Description](#description)
   [Installation](#installation)
   [Usage](#usage)
-  [License](#license)
-  [Contributions](contributions)
-  [Email and Github](#email)
+  ${licenseLink}
+  [Contributions](#contributions)
+  [Tests](#tests)
+  [Email](#email)
+  [Github](#github)
 
   ## Description
   ${data.description}
@@ -48,6 +81,22 @@ function generateMarkdown(data) {
   ## Installation
   ${data.installation}
 
+  ## Usage
+  ${data.usage}
+
+  ${licenseSection}
+
+  ## Contributions
+  ${data.contributions}
+
+  ## Tests
+  ${data.testing}
+
+  ## Email
+  For any questions please email me at ${data.email}
+
+  ## Github
+  Please visit my Github page at [${data.github}](https://github.com/${data.github}).
 
 `;
 }
