@@ -20,6 +20,7 @@ If a user chooses anyone of these license options (Apache,GNU,MIT), it will dyna
 
 ## Links
 
-[Video](https://watch.screencastify.com/v/QBviw5Lb9IqTRiyyUEV2) 
+[Video](https://watch.screencastify.com/v/QBviw5Lb9IqTRiyyUEV2)
+ 
 [Github repository](https://github.com/vini3076/professional-readme-generator)
 
